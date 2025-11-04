@@ -83,7 +83,7 @@
 /* HP */
 @media (max-width: 768px) {
     #filmcontainer {
-        grid-template-columns: repeat(4, 1fr); /* ✅ 4 per baris HP */
+        grid-template-columns: repeat(2, 1fr); /* ✅ 2 per baris HP */
         gap: 10px;
     }
 }
@@ -140,4 +140,5 @@
     color: gold;
 
 }
+
 
