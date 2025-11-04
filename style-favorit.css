@@ -90,4 +90,20 @@
   color: #ccc;
   font-size: 1em;
   line-height: 1.6;
+
+}
+
+/* ========== RESPONSIVE NAVBAR (Mobile) ========== */
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; /* Biar kalau tidak muat, turun rapi */
+        gap: 10px; /* Jarak antar menu */
+    }
+
+    nav a {
+        margin: 0 10px; /* perkecil margin */
+        font-size: 0.95em; /* kecilkan sedikit agar muat */
+    }
 }
