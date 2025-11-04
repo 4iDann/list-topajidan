@@ -38,6 +38,23 @@
       text-shadow: 0 0 8px #ffd700;
     }
 
+/* ========== RESPONSIVE NAVBAR (Mobile) ========== */
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;     /* Menu otomatis turun ke bawah jika tidak muat */
+        gap: 8px;            /* Jarak antar menu */
+        padding: 10px 5px;   /* Kurangi padding agar lebih muat */
+    }
+
+    nav a {
+        margin: 0 6px; /* perkecil margin */
+        font-size: 0.85em; /* kecilkan sedikit agar muat */
+        padding: 6px 10px;
+    }
+}
+
     /* === Konten Setiap Kategori === */
     .content {
       display: none;
@@ -91,19 +108,4 @@
   font-size: 1em;
   line-height: 1.6;
 
-}
-
-/* ========== RESPONSIVE NAVBAR (Mobile) ========== */
-@media (max-width: 768px) {
-    nav {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap; /* Biar kalau tidak muat, turun rapi */
-        gap: 10px; /* Jarak antar menu */
-    }
-
-    nav a {
-        margin: 0 10px; /* perkecil margin */
-        font-size: 0.95em; /* kecilkan sedikit agar muat */
-    }
 }
