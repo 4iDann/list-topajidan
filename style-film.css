@@ -66,6 +66,28 @@
     justify-items: center;
 }
 
+/* Desktop - 5 atau 6 per baris */
+@media (min-width: 1200px) {
+    #filmcontainer {
+        grid-template-columns: repeat(6, 1fr); /* Bisa 5 jika terlalu kecil */
+    }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    #filmcontainer {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* HP */
+@media (max-width: 768px) {
+    #filmcontainer {
+        grid-template-columns: repeat(4, 1fr); /* ✅ 4 per baris HP */
+        gap: 10px;
+    }
+}
+
 /* 6 per baris untuk layar besar (PC) */
 @media (min-width: 1200px) {
     #filmcontainer {
@@ -75,7 +97,7 @@
 
 /* Gallery */
 .gallery {
-    display: flex;
+    display: contents;
     justify-content: center;
     flex-wrap: wrap;
     gap: 25px;
@@ -116,4 +138,5 @@
 .film-rating {
     font-size: 15px;
     color: gold;
+
 }
